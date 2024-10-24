@@ -383,9 +383,9 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>不引入任何现有的机器学习框架，从零开始实现线性回归算法。具体代码如下：<br>  %matplotlib inline<br>  import random<br>  import torch<br>  from d2l import torch as d2l</p>
-<p>  #人工生成数据<br>  def synthetic_data(w, b, num_examples):<br>      X &#x3D; torch.normal(0, 1, (num_examples, len(w)))<br>      y &#x3D; torch.matmul(X, w) + b<br>      y +&#x3D; torch.normal(0, 0.01, y.shape)<br>      return X, y</p>
-<p>  true_w &#x3D; torch.tensor([2, -3.4])<br>  true_b &#x3D; 4.2<br>  features, lables &#x3D; synthetic_data(true_w, true_b, 1000)</p>
+                <p>不引入任何现有的机器学习框架，从零开始实现线性回归算法。具体代码如下：<br>‘’’python<br>%matplotlib inline<br>import random<br>import torch<br>from d2l import torch as d2l</p>
+<p>#人工生成数据<br>def synthetic_data(w, b, num_examples):<br>  X &#x3D; torch.normal(0, 1, (num_examples, len(w)))<br>  y &#x3D; torch.matmul(X, w) + b<br>  y +&#x3D; torch.normal(0, 0.01, y.shape)<br>  return X, y</p>
+<p>true_w &#x3D; torch.tensor([2, -3.4])<br>true_b &#x3D; 4.2<br>features, lables &#x3D; synthetic_data(true_w, true_b, 1000)<br>‘’’<br>The End</p>
 
                 
             </div>
